@@ -21,7 +21,11 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
     show-sql: true
-    open-in-view: true
+    open-in-view:
+
+scheduler:
+  cron: 0 0/2 * * * ?
+  fixedRate:  10000
 
 server:
   port: 8585
